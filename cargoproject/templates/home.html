@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Fast Kargo - Ana Sayfa{% endblock %}
+
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+<div class="row mb-5">
+    <div class="col-md-7 d-flex flex-column justify-content-center">
+        <h1 class="fw-bold display-5">Türkiye’nin En Hızlı Kargo Servisi</h1>
+        <a href="{% url 'cargo_create' %}" class="btn btn-warning btn-lg fw-bold mt-3 px-4">
+            Gönderi Oluştur
+        </a>
+    </div>
+
+    <div class="col-md-5">
+        <div class="card-pro">
+            <h4 class="fw-bold">📦 Kargo Takip</h4>
+            <p class="text-muted">Takip numaranızı girerek gönderinizi izleyin.</p>
+
+            <div class="input-group mt-3">
+                <input type="text" class="form-control form-control-lg" placeholder="FK123456789TR">
+                <button class="btn btn-warning fw-bold">Takip Et</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-pro mb-4">
+    <h3 class="fw-bold mb-3">🆘 Destek Talebi Oluştur</h3>
+    <p class="text-muted fs-6">
+        Kargonuzla ilgili bir probleminiz mi var? Destek ekibimiz 7/24 size yardımcı olur.
+    </p>
+
+    <a href="#" class="btn btn-warning fw-bold btn-lg mt-2">
+        Destek Talebi Aç
+    </a>
+</div>
+<div class="card-pro bg-light">
+    <h3 class="fw-bold">🚚 Bizimle Çalışmak İster misiniz?</h3>
+    <p class="text-muted fs-6">
+        Türkiye genelinde kurye ve dağıtım ekiplerimize katılmak ister misiniz?
+        Online başvuru formunu doldurarak bize ulaşabilirsiniz.
+    </p>
+
+    <a href="#" class="btn btn-dark fw-bold btn-lg mt-2">
+        Kurye Başvuru Formu
+    </a>
+</div>
+
+{% endblock %}
