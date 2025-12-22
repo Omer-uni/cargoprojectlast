@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib import messages
 from .models import Cargo, CargoHistory
+# Sefik tarafından güncellendi
 
 @login_required
 def cargo_list(request):
