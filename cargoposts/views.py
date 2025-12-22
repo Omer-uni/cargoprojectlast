@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.contrib import messages
 from .models import Cargo, CargoHistory
 # Sefik tarafından güncellendi
+# Son guncelleme Sefik
 
 @login_required
 def cargo_list(request):
